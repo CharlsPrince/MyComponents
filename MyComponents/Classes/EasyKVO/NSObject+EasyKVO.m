@@ -48,7 +48,7 @@ const NSString * easy_BlockKey = @"easy_block";
     });
     NSDictionary *observer = @{easy_objectKey: object, easy_keyPathKey: keyPath, easy_BlockKey: block};
     [self.easy_Observers addObject:observer];
-    NSString *key = [NSString stringWithFormat:@"%lu", self.easy_Observers.count-1];
+    NSString *key = [NSString stringWithFormat:@"%u", (unsigned int)(self.easy_Observers.count-1)];
     [self addObserver:object forKeyPath:keyPath options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:(__bridge void * _Nullable)(key)];
 }
 
