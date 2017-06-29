@@ -24,6 +24,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8BB79FD4C9CB97C63505293B /* Pods_MyComponents_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2C6DD6D34EDAA1396EA66D /* Pods_MyComponents_Example.framework */; };
 		BD6BCF17A0CEBF10F91BF643 /* Pods_MyComponents_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D3AD29BA71B062860F0E85 /* Pods_MyComponents_Tests.framework */; };
+		FEB3F0DE1F024EAF008FF6FD /* HYCRewardSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB3F0DD1F024EAF008FF6FD /* HYCRewardSuccessViewController.m */; };
+		FEF5C7671F04E1C600A80A84 /* HYCKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5C7661F04E1C600A80A84 /* HYCKVOViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +61,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		656B33FC248E41C583B70530 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		656B33FC248E41C583B70530 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6C2C6DD6D34EDAA1396EA66D /* Pods_MyComponents_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyComponents_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7AA957B5BC88527ED851A709 /* MyComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MyComponents.podspec; path = ../MyComponents.podspec; sourceTree = "<group>"; };
+		7AA957B5BC88527ED851A709 /* MyComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyComponents.podspec; path = ../MyComponents.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E9221A867F398663847FD6B /* Pods-MyComponents_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyComponents_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyComponents_Tests/Pods-MyComponents_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B09D97D91AC0ED4F209D7FA4 /* Pods-MyComponents_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyComponents_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyComponents_Example/Pods-MyComponents_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D565C790C6E5169DABC973C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D565C790C6E5169DABC973C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FEB3F0DC1F024EAF008FF6FD /* HYCRewardSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCRewardSuccessViewController.h; sourceTree = "<group>"; };
+		FEB3F0DD1F024EAF008FF6FD /* HYCRewardSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCRewardSuccessViewController.m; sourceTree = "<group>"; };
+		FEF5C7651F04E1C600A80A84 /* HYCKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCKVOViewController.h; sourceTree = "<group>"; };
+		FEF5C7661F04E1C600A80A84 /* HYCKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCKVOViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 		6003F593195388D20070C39A /* Example for MyComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FEB3F0DB1F024E81008FF6FD /* viewControllers */,
 				6003F59C195388D20070C39A /* HYCAppDelegate.h */,
 				6003F59D195388D20070C39A /* HYCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +201,17 @@
 				D565C790C6E5169DABC973C7 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		FEB3F0DB1F024E81008FF6FD /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEB3F0DC1F024EAF008FF6FD /* HYCRewardSuccessViewController.h */,
+				FEB3F0DD1F024EAF008FF6FD /* HYCRewardSuccessViewController.m */,
+				FEF5C7651F04E1C600A80A84 /* HYCKVOViewController.h */,
+				FEF5C7661F04E1C600A80A84 /* HYCKVOViewController.m */,
+			);
+			path = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +412,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB3F0DE1F024EAF008FF6FD /* HYCRewardSuccessViewController.m in Sources */,
 				6003F59E195388D20070C39A /* HYCAppDelegate.m in Sources */,
+				FEF5C7671F04E1C600A80A84 /* HYCKVOViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* HYCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -7,12 +7,23 @@
 //
 
 #import "HYCAppDelegate.h"
+#import "HYCViewController.h"
 
 @implementation HYCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    [_window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    HYCViewController *viewController = [[HYCViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 

@@ -30,8 +30,29 @@ This is a private component library.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MyComponents/Classes/**/*'
+  s.source_files = 'MyComponents/Classes/*.*'
+  s.public_header_files = 'MyComponents/Classes/*.*'
   s.requires_arc = true #是否支持arc
+  s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
+
+  s.subspec 'TestObject' do |ss|
+    ss.source_files = 'MyComponents/Classes/TestObject/*.{h,m}'
+    ss.public_header_files = 'MyComponents/Classes/TestObject/*.h'
+    ss.frameworks = 'UIKit', 'Foundation'
+  end
+  s.subspec 'RewardSuccess' do |ss|
+    ss.source_files = 'MyComponents/Classes/RewardSuccess/*.{h,m}'
+    ss.public_header_files = 'MyComponents/Classes/RewardSuccess/*.h'
+    ss.frameworks = 'UIKit', 'Foundation'
+    ss.resource_bundles = {
+      'success_star' => ['MyComponents/Assets/success_star@2x.png']
+    }
+  end
+    s.subspec 'EasyKVO' do |ss|
+    ss.source_files = 'MyComponents/Classes/EasyKVO/*.{h,m}'
+    ss.public_header_files = 'MyComponents/Classes/EasyKVO/*.h'
+    ss.frameworks = 'UIKit', 'Foundation'
+  end
   
   # s.resource_bundles = {
   #   'MyComponents' => ['MyComponents/Assets/*.png']

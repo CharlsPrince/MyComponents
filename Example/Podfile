@@ -1,11 +1,11 @@
 use_frameworks!
 
 target 'MyComponents_Example' do
-  pod 'MyComponents', :path => '../'
-
-  target 'MyComponents_Tests' do
-    inherit! :search_paths
-
+    pod 'MyComponents', :path => '../'
     
-  end
+    target 'MyComponents_Tests' do
+        inherit! :search_paths
+        
+        
+    end
 end
