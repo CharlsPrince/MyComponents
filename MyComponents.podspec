@@ -24,7 +24,7 @@ This is a private component library.
   s.homepage         = 'https://github.com/CharlsPrince/MyComponents'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'CharlsPrince' => '961629701@qq,com' }
+  s.author           = { 'CharlsPrince' => '961629701@qq.com' }
   s.source           = { :git => 'https://github.com/CharlsPrince/MyComponents.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

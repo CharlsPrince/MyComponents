@@ -8,6 +8,7 @@
 
 #import "HYCViewController.h"
 #import <MyComponents/MyComponents.h>
+#import <MyComponents/NSObject+EasyKVO.h>
 
 @interface TObject : NSObject
 
